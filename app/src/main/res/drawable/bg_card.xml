@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glass card: white sheen fading from 65% (top) to 30% (bottom) + bright rim -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:angle="270" android:startColor="#A6FFFFFF" android:endColor="#4DFFFFFF" />
+    <corners android:radius="20dp" />
+    <stroke android:width="1dp" android:color="@color/glass_edge" />
+</shape>

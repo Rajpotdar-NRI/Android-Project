@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colourful cream/orange background. Glass only shows when there is colour BEHIND it,
+     so these glows are what make every card on every screen look like glass. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- warm peach base (not flat cream) so white glass is visible in the MIDDLE of the screen too -->
+    <item>
+        <shape><gradient android:angle="300" android:startColor="#FFF3E2" android:centerColor="#FFE2C4" android:endColor="#FFD2A8" /></shape>
+    </item>
+    <item android:gravity="top|end" android:width="480dp" android:height="480dp"
+        android:top="-160dp" android:right="-180dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="50%"
+                android:startColor="#CCF4A261" android:endColor="#00F4A261" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical|start" android:width="380dp" android:height="380dp"
+        android:left="-170dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="50%"
+                android:startColor="#99F4A261" android:endColor="#00F4A261" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical|end" android:width="300dp" android:height="300dp"
+        android:right="-120dp" android:top="220dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="50%"
+                android:startColor="#80FFC48A" android:endColor="#00FFC48A" />
+        </shape>
+    </item>
+    <item android:gravity="bottom|start" android:width="520dp" android:height="520dp"
+        android:bottom="-200dp" android:left="-180dp">
+        <shape android:shape="oval">
+            <gradient android:type="radial" android:gradientRadius="50%"
+                android:startColor="#B3E9762B" android:endColor="#00E9762B" />
+        </shape>
+    </item>
+</layer-list>

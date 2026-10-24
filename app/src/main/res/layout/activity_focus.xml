@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/chip25" style="@style/Chip" android:layout_margin="4dp" android:text="25 min" />
+            <TextView android:id="@+id/chip45" style="@style/Chip" android:layout_margin="4dp" android:text="45 min" />
+            <TextView android:id="@+id/chip60" style="@style/Chip" android:layout_margin="4dp" android:text="60 min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.15"
+                android:text="READY"
+                android:textColor="@color/orange_deep"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="25:00"
+                android:textColor="@color/brown"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/pbTimer"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="12dp"
+                android:max="1000"
+                android:progressDrawable="@drawable/progress_orange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReset"
+                style="@style/Btn.Sand"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:text="↺  Reset" />
+
+            <Button
+                android:id="@+id/btnStart"
+                style="@style/Btn"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="2"
+                android:text="▶  Start" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFocusToday"
+            style="@style/CardText"
+            android:layout_marginTop="24dp"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

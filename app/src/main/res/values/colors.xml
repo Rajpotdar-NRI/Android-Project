@@ -1,0 +1,24 @@
+<resources>
+    <!-- Cream white + sand + light orange theme -->
+    <color name="cream">#FFF8EE</color>
+    <color name="card">#FFFDF9</color>
+    <color name="sand">#F2E3CC</color>
+    <color name="sand_dark">#E6D2B5</color>
+    <color name="orange">#F4A261</color>
+    <color name="orange_deep">#E9762B</color>
+    <color name="brown">#3E2C1C</color>
+    <color name="brown_light">#8A7560</color>
+    <color name="green">#5E9A4B</color>
+    <color name="red">#D64545</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Glass (translucent white) layers -->
+    <color name="glass">#A6FFFFFF</color>          <!-- 65% white: cards on cream screens -->
+    <color name="glass_strong">#D9FFFFFF</color>   <!-- 85% white: dialogs (must stay readable) -->
+    <color name="glass_light">#33FFFFFF</color>    <!-- 20% white: on orange backgrounds -->
+    <color name="glass_edge">#E6FFFFFF</color>     <!-- bright rim that sells the glass look -->
+    <color name="glass_edge_soft">#66FFFFFF</color>
+    <color name="blob_orange">#8CF4A261</color>
+    <color name="blob_sand">#B3F2D3A8</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

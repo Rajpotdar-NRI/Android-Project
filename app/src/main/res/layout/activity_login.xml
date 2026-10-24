@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One screen for both Login and Create Account (fields toggle with the link at the bottom). -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:background="@drawable/bg_chip_glass"
+            android:padding="8dp"
+            android:contentDescription="Campus Survival logo"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Campus Survival"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="What do I need to do today?"
+            android:textColor="#E6FFFFFF"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_glass_login"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back 👋"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/Field.Light"
+                android:hint="Full name"
+                android:inputType="textPersonName|textCapWords"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/Field.Light"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/Field.Light"
+                android:hint="Password (min 6 characters)"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etConfirm"
+                style="@style/Field.Light"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cbShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:buttonTint="@color/white"
+                android:text="Show password"
+                android:textColor="#E6FFFFFF" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/Btn"
+                android:background="@drawable/bg_btn_white"
+                android:textColor="@color/orange_deep"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:text="Login" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="10dp"
+            android:text="New here? Create an account"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

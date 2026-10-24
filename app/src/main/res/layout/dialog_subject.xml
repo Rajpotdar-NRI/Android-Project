@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText android:id="@+id/etName" style="@style/Field" android:hint="Subject name (e.g. Java)" android:inputType="textCapWords" />
+    <EditText android:id="@+id/etLecTotal" style="@style/Field" android:hint="Lectures held so far (e.g. 22)" android:inputType="number" />
+    <EditText android:id="@+id/etLecAtt" style="@style/Field" android:hint="Lectures you attended (e.g. 16)" android:inputType="number" />
+    <EditText android:id="@+id/etPracTotal" style="@style/Field" android:hint="Total practicals in semester (e.g. 12)" android:inputType="number" />
+    <EditText android:id="@+id/etUnitTotal" style="@style/Field" android:hint="Number of syllabus units (e.g. 5)" android:inputType="number" />
+</LinearLayout>
